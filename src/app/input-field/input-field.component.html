@@ -1,0 +1,7 @@
+<div class="input-field-container">
+
+  <p class="mat-body-strong">Input: </p><input id="input-data" #inputData>
+  <button mat-raised-button color="primary" (click)="checkInput(inputData.value)" id="submit-button">Submit</button>
+  <p class="mat-caption invalid-text" id="error-message" *ngIf="!isValid && errorMessage">{{errorMessage}}</p>
+
+</div>
